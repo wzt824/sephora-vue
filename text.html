@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jsonp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <script src="../js/Vue.js"></script>
+  <script src="../js/vue-resource.js"></script>
+  <script>
+    window.onload = function(){
+      var vm = new Vue({
+        el:'#box',
+        data:{
+          myData:[],
+          t1:''
+        },
+        methods:{
+          get:function(){
+            this.$http.jsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',{
+              wd:this.t1
+            },{
+              jsonp:'cb'
+            }).then(function(res){
+              this.myData=res.data.s
+            },function(){
+            });
+          }
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+<div id="box">
+  <input type="text" v-model="t1" @keyup="get()">
+  <ul>
+    <li v-for="value in myData">{{value}}</li>
+  </ul>
+  <p v-show="myData.length==0">暂无数据...</p>
+</div>
+</body>
+</html>

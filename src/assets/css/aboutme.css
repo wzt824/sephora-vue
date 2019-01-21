@@ -1,0 +1,332 @@
+@charset "UTF-8";
+body, p, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, td, input, select, option, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 26.67vw;
+}
+
+body {
+  font-family: "微软雅黑",Arial;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: none;
+  display: block;
+}
+
+i, span {
+  display: inline-block;
+  font-style: normal;
+}
+
+.header {
+  /*background: white;*/
+  padding-bottom: .04rem;
+}
+.header .line1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15rem 0.17rem 0px 0.17rem;
+  align-items: center;
+}
+.header .line1 i {
+  color: white;
+  width: .22rem;
+  height: .18rem;
+}
+ .line1 span {
+  font-size: .20rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07rem;
+}
+.header a {
+  color: black;
+  white-space: nowrap;
+}
+.header a i {
+  color: black !important;
+  font-size: .24rem;
+}
+#infouser{
+  font-size:.14rem;
+}
+#infouser a{
+  display: flex;
+  align-items: center;
+}
+#infouser a img{
+  justify-content: flex-start;
+  padding-right:0.15rem;
+  width:.25rem;
+  height: .25rem;
+}
+#infouser a p{
+  justify-content: flex-start;
+
+}
+/*section开始*/
+section {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+section .userpic{
+  display: flex;
+  justify-content: center;
+ padding-bottom: .14rem;
+  background: white;
+}
+section .userpic a{
+  color:black;
+  font-size: .14rem;
+  position: relative;
+}
+section .userpic a img{
+  width:.92rem;
+  height:.92rem;
+  /*position: absolute;*/
+  /*top:-0.09rem;*/
+  /*z-index: 99999;*/
+}
+section .userpic a  p{
+ padding:0.11rem 0;
+  text-align: center;
+}
+.allinfos{
+ padding:0 .1rem;
+  margin-bottom: .1rem;
+}
+section .userdo{
+  display: flex;
+  justify-content: space-around;
+  padding:.24rem .14rem;
+  align-items: center;
+  box-shadow: 0 0 .06rem .02rem #eaeaea;
+  background: white;
+  border-radius: .04rem;
+}
+section .userdo a{
+  text-align: center;
+  color:#999999;
+  font-size: .13rem;
+
+}
+section .userdo a .setinfo{
+  color:red;
+}
+section .userdo a p{
+  padding-bottom: .11rem;
+  color: black;
+
+}
+.quaninfo{
+  background: #f32990;
+  padding:.07rem .19rem .1rem .19rem;
+  border-bottom-left-radius: .04rem;
+  border-bottom-right-radius: .04rem;
+  margin-top:-.05rem;
+
+}
+.quaninfo p{
+  font-size: .115rem;
+  color:white;
+  letter-spacing: .02rem;
+  line-height: .17rem;
+  padding-bottom: .05rem;
+  border-bottom: 1px solid white;
+}
+.seevipinfo{
+  padding: .11rem 0 0 0;
+}
+.seevipinfo a{
+  display: flex;
+  justify-content: space-between;
+}
+.seevipinfo p{
+  border:none;
+  font-size: .115rem;
+  color:white;
+  letter-spacing: .02rem;
+  line-height: .17rem;
+}
+.seevipinfo p:first-of-type{
+  display: flex;
+}
+.seevipinfo p:first-of-type img{
+  width:.27rem;
+  height:.17rem;
+  margin-right: .11rem ;
+}
+.myorders{
+  margin:0 .1rem;
+
+  color:#9d9d9d;
+  /*background: white;*/
+}
+.ordrside{
+  background: white;
+  border-radius: .04rem;
+
+}
+.myorders .order-title h4{
+  color:#4a4a4a;
+  font-weight: normal;
+}
+.myorders .order-title{
+  padding:.13rem 0.2rem;
+  font-size: .14rem;
+  line-height: .14rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #eaeaea;
+  background: white;
+
+}
+.order-info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .15rem;
+  padding:0 .2rem;
+  background: white;
+}
+.myorders .order-title i{
+  font-weight: bolder;
+}
+.server{
+  border-radius: 0.04rem;
+}
+.order-info a{
+  padding:.19rem 0 .11rem;
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  color:#aaaaaa;
+  font-size: .09rem;
+}
+.order-info a img{
+  width:.25rem;
+  height:.21rem;
+}
+.order-info a span{
+  margin-top:.13rem;
+}
+.server{
+  margin-bottom:0;
+}
+.server a img{
+  width:.6rem;
+  height:.6rem;
+}
+.server a span{
+  padding-top:.1rem;
+  margin:0;
+}
+/*thoughtlike  猜你喜欢开始*/
+.thoughtlike-title{
+  display: flex;
+  align-items: center;
+  position: relative;
+  height:.53rem;
+  justify-content: center;
+}
+.thoughtlike-title .linecenter{
+  width:3.17rem;
+  background: #999999;
+  height:1px;
+}
+.line-topwords{
+  position: absolute;
+  left:34%;
+  display: flex;
+  color:black;
+  font-size: .19rem;
+  background: #f6f6f6;
+   padding:0 .13rem;
+
+}
+.line-topwords img{
+  width:.32rem;
+  height:.28rem;
+  margin-right:.09rem;
+}
+.thoughtlike-pro{
+  display: flex;
+}
+.prodctshow{
+  padding-top:.25rem;
+  flex: 1;
+  width:50%;
+  justify-content: flex-start;
+  border-left:1px solid #f4f4f4;
+  border-top:1px solid #f4f4f4;
+  padding-left:0.1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+
+}
+.prodctshow:nth-of-type(2n-1){
+  border-left: none;
+}
+.prodctshow a{
+   text-align: left;
+ }
+.prodctshow a img{
+ margin:0 auto;
+  width:.9rem;
+  height:.9rem;
+
+}
+.prodctshow a p{
+    color:#2e2e2e;
+    font-size: .14rem;
+  }
+.prodctshow a .prodecs{
+  color:#999999;
+}
+.footer {
+  padding: 0.09rem .24rem .1rem;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 -0.04rem .06rem 0 #f4f4f4;
+  align-items: center;
+}
+.footer a {
+  color: #858585;
+  text-align: center;
+}
+.footer a i {
+  font-size: .23rem;
+  line-height: .23rem;
+}
+.footer a p {
+  font-size: .1rem;
+  line-height: .1rem;
+  padding-top: .06rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=aboutme.css.map */

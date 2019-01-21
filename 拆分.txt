@@ -1,0 +1,54 @@
+
+//拆分首页ObjIndex        Index.vue
+ObjIndexHeader
+ObjIndexSection
+    ObjIndexSectionTopSwiper
+    ObjIndexSectionGuide
+    ObjIndexSectionCenterPro
+    ObjIndexSectionAllBrands
+    ObjIndexSectionCategory
+    ObjIndexSectionRecommend
+ObjIndexFooter
+//拆分分类  ObjCategory    Category.vue
+ObjCategoryHeader
+ObjCategorySection
+      ObjCategorySectionCategoryName
+      ObjCategorySectionCategoryNameList
+         不同的功效 ---所对应的不同的商品
+ObjCategoryFooter
+
+//拆分购物车ShopCarts   ShopCarts.vue
+ShopCartsHeader
+ShopCartsSection
+   ShopCartsSectionProductList
+       ShopCartsSectionProduct
+   ShopCartsSectionProductDiscount
+   ShopCartsSectionGuessLike
+          ShopCartsSectionGuessLikeTitle
+          ShopCartsSectionGuessLikeproductList
+          ShopCartsSectionGuessLikeproduct
+ShopCartsAllPrice
+ShopCartsFooter
+
+//评价拆分  PublicPraise    PublicPraise.vue
+PublicPraiseHeader
+PublicPraiseSection
+    PublicPraisesectionHotTags
+    PublicPraisesectiongoodPraise
+PublicPraiseFooter
+
+//aboutme拆分 AboutMe AboutMe.vue
+AboutMeHeader
+AboutMeSection
+     AboutMeSectionInfo
+     AboutMeSectionOrderAndServer
+     AboutMeLike
+AboutMeFooter
+
+//商品详情拆分 GoodsDetails  GoodsDetails.vue
+ GoodsDetailsHeader
+ GoodsDetailsSection
+    GoodsDetailsSectionProduct
+    GoodsDetailsSectionProductSay
+    GoodsDetailsSectionProductDetail
+ GoodsDetailsFooter
